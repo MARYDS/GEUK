@@ -1,0 +1,331 @@
+/* Results summary list by region / constituency */
+
+/* properties for entire page */
+.mainResultsPage {
+    font-family: tahoma, helvetica, sans-serif;
+}
+/* Heading for year title */
+.mainTitleArea {
+    display: block;
+    width: 100%;
+    top: 0px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+}
+.mainTitle {
+    text-align: center;
+}
+
+
+/* Year selection radio button area */
+.resultsSummaryYearArea {
+    width: 35%;
+    clear: left;
+}
+.resultsSummaryYearFieldset {
+    width: 100%;
+    border: none;
+}
+.resultsSummaryYearField {
+    float: left;
+    width: 20%;
+    font-size: 0.6em;
+}
+
+/* Region selection checkbox area */
+.resultsSummaryRegionArea {
+    width: 35%;
+    clear: left;
+}
+.resultsSummaryRegionFieldset {
+    width: 100%;
+    border: none;
+}
+.resultsSummaryRegionField {
+    float: left;
+    width: 33%;
+    font-size: 0.6em;
+}
+.resultsSummaryRegionButtons {
+    width: 100%;
+    float: left;
+}
+.resultsSummaryRegionButton {
+   border: 1px solid darkgrey;
+   outline: none;
+   padding: 0.5em;
+   float: left;
+   width: 20%;
+   background-color: lightgrey;
+   font-size: 0.6em;
+}
+
+/* Party selection checkbox area */
+.resultsSummaryPartyArea {
+    width: 35%;
+    clear: left;
+}
+.resultsSummaryPartyFieldset {
+    width: 100%;
+    border: none;
+}
+.resultsSummaryPartyField {
+    float: left;
+    width: 33%;
+    font-size: 0.6em;
+}
+.resultsSummaryPartyButtons {
+    width: 100%;
+    float: left;
+}
+.resultsSummaryPartyButton {
+   border: 1px solid darkgrey;
+   outline: none;
+   padding: 0.5em;
+   float: left;
+   width: 20%;
+   background-color: lightgrey;
+   font-size: 0.6em;
+}
+
+/* Sort options button area */
+.resultsSummarySortArea {
+    width: 35%;
+    clear: left;
+}
+.resultsSummarySortAreaText p {
+    width: 100%;
+    font-size: 0.6em;
+}
+.resultsSummarySortButton {
+   border: 1px solid darkgrey;
+   outline: none;
+   padding: 0.5em;
+   float: left;
+   width: 20%;
+   background-color: lightgrey;
+   cursor: move;
+   font-size: 0.6em;
+}
+
+
+/* Search field */
+.resultsSummarySearchArea {
+    width: 35%;
+    border: none;
+    clear: left;
+}
+.resultsSummarySearchBox {
+    width: 97%;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1%; 
+}
+
+/* Menu buttons for options */
+.resultsSummaryMenuOptions {
+    width: 35%;
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    clear: left;
+}
+.resultsSummarySelectButtons {
+   padding: 0;
+   margin: 0;
+   margin-top: 1%;
+}
+.resultsSummarySelectButton {
+   border: 1px solid darkgrey;
+   outline: none;
+   padding: 0.4em;
+   float: left;
+   background-color: lightgrey;
+   cursor: pointer;
+   font-size: 0.6em;
+   width: 25%;
+   height: 3em;
+}
+
+.resultsSummarySelectButton:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+/* Results summary table of results */
+.resultsSummaryConstituencies {
+    width: 35%;
+    border: none;
+    clear: left;
+}
+.resultsSummaryTable {
+  font-size: 0.8em;
+  border-collapse: collapse;
+  border-spacing:0;
+  border: none;
+}
+.resultsSummaryTable th {
+  background-color: dimgrey;
+  color: white;
+  border: none;
+  font-weight: normal;
+}
+
+.resultsSummaryTable .summListL1 {
+  padding: 0;
+  padding-top: 0.5em;
+  cursor: pointer;
+}
+.resultsSummaryTable .summListPrev1 {
+  width: 1%;
+}
+.resultsSummaryTable .summListCon {
+  width: 45%;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.resultsSummaryTable .summListCurr1 {
+  width: 1%;
+}
+.resultsSummaryTable .summListMP {
+  width: 35%;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.resultsSummaryTable .summListMar {
+  width: 10%;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.resultsSummaryTable .summListSec1 {
+  width: 1%;
+}
+
+
+.resultsSummaryTable .summListL2 { 
+  padding-bottom: 0.5em;
+  cursor: pointer;
+}
+.resultsSummaryTable .summListPrev2 {
+  width: 1%;
+}
+.resultsSummaryTable .summListReg {
+  width: 45%;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.resultsSummaryTable .summListCurr2 {
+  width: 1%;
+}
+.resultsSummaryTable .summListParty {
+  width: 35%;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.resultsSummaryTable .summListEmpty {
+  width: 10%;
+}
+.resultsSummaryTable .summListSec2 {
+  width: 1%;
+}
+
+.resultsSummaryTable a {
+  display:inline-block;
+  min-height:100%;
+  width:100%;
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Detail Results for constituency */
+.detailResultsArea {
+  width: 63%;
+  float: right;
+}
+.detailResultsOverall {
+   clear: left;
+}
+.detailResultsTitleArea {
+    text-align: center;
+}
+.detailResultsOverallLeft {
+    clear: left;
+    float: left;
+    width: 33%;
+}
+.detailResultsOverallCanvas {
+    display: block;
+    margin: 0 auto;
+}
+.detailResultsOverallCenter {
+    float: left;
+    width: 33%;
+}
+.detailResultsOverallCenter table {
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+.detailResultsOverallRight {
+    float: right;
+    width: 33%;
+}
+.detailResultsOverallText {
+    font-size: 0.8em;
+    width: 50%;
+}
+.detailResultsOverallNumber {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.detailResultsDetail {
+   clear: left;
+}
+.resultsDetailTable {
+  font-size: 0.8em;
+  border-collapse: collapse;
+  width: 100%;
+}
+.resultsDetailTable th {
+  background-color: dimgrey;
+  color: white;
+  border: none;
+  font-weight: Normal;
+}
+
+.resultsDetailColour {
+  width: 1%;
+  text-align: left;
+}
+.resultsDetailCandidate {
+  width: 40%;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+.resultsDetailVotes {
+  width: 20%;
+  text-align: right;
+}
+.resultsDetailShare {
+  width: 20;
+  text-align: right;
+}
+.resultsDetailChange {
+  width: 19%;
+  text-align: right;
+}
+.resultsDetailParty {
+  width: 40%;
+  text-align: left;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
