@@ -1,3 +1,4 @@
+var summaryData = 
 [{year:"2015",con:"Aberavon",mp:"Stephen Kinnock",mprev:"Kinnock Stephen",mar: 33.13,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#70147A",prevparty: "Labour",secparty:"UK Independence Party"},
 {year:"2015",con:"Aberconwy",mp:"Guto Bebb",mprev:"Bebb Guto",mar: 13.26,reg:"Wales",party:"Conservative",prev:"#0087DC",curr:"#0087DC",sec:"#DC241f",prevparty: "Conservative",secparty:"Labour"},
 {year:"2015",con:"Aberdeen North",mp:"Kirsty Blackman",mprev:"Blackman Kirsty",mar: 30.49,reg:"Scotland",party:"Scottish National Party",prev:"#DC241f",curr:"#FFFF00",sec:"#DC241f",prevparty: "Labour",secparty:"Labour"},
@@ -1980,3 +1981,5 @@
 {year:"2017",con:"Cardiff West",mp:"Kevin Brennan",mprev:"Brennan Kevin",mar: 26.92,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"},
 {year:"2017",con:"Cardiff South and Penarth",mp:"Stephen Doughty",mprev:"Doughty Stephen",mar: 29.3,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"}
 ]
+
+module.exports = summaryData

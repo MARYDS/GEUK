@@ -3,7 +3,6 @@
 //========================================================================
 import React from 'react'
 import {render} from 'react-dom'
-import jQuery from 'jQuery'
 
 import YearSelection from './yearselection.js';
 import RegionSelection from './regionselection.js';
@@ -12,6 +11,7 @@ import SortOrderSelection from './sortorder.js';
 import Search from './search.js';
 import ShowButtons from './showbuttons.js';
 import DetailResults from './detail.js';
+var summaryData = require("./summarydata.js");
 
 // Main title for the page
 class MainTitle extends React.Component {
@@ -565,15 +565,7 @@ class SummaryResults extends React.Component{
     }
   
     getResults() {
-        
-        var results
-        // Will come from database in future
-        jQuery.get("./src/data/summary.txt", function(data) {
-            results = data
-        }).done(function() {
-           return results
-        })
-
+       return summaryData
     }
   
 }
