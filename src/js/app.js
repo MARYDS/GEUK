@@ -1,3 +1,6 @@
+import React from 'react'
+import {render} from 'react-dom'
+
 import SummaryResults from "./summary.js";
 
 class App extends React.Component {
@@ -14,4 +17,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById("app"));

@@ -2,6 +2,9 @@
 // Year Selection
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // Radio buttion in year selection area
 class YearItem extends React.Component {
    constructor(props){

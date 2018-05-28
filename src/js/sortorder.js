@@ -2,6 +2,9 @@
 // Sort Order Selection
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // One sort item
 class SortItemSummary extends React.Component {
    constructor(props){

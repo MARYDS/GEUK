@@ -1,6 +1,9 @@
 //========================================================================
 // Summary Results list
 //========================================================================
+import React from 'react'
+import {render} from 'react-dom'
+
 import YearSelection from './regionselection.js';
 import RegionSelection from './regionselection.js';
 import PartySelection from './partyselection.js';

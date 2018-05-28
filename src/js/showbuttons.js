@@ -2,6 +2,9 @@
 // Buttons to display / hide selection panels
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // Menu buttons for options
 class ShowButton extends React.Component {
    constructor(props){

@@ -2,6 +2,9 @@
 // Region Selection
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // Checkbox in region selection area
 class RegionItem extends React.Component {
    constructor(props){

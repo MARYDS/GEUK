@@ -2,6 +2,9 @@
 // Party Selection
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // Checkbox in party selection area
 class PartyItem extends React.Component {
    constructor(props){

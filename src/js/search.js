@@ -2,6 +2,8 @@
 //========================================================================
 // Search box
 //========================================================================
+import React from 'react'
+import {render} from 'react-dom'
 
 // Search box area
 class Search extends React.Component {

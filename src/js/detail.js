@@ -2,6 +2,9 @@
 // Detail results for a constituency
 //========================================================================
 
+import React from 'react'
+import {render} from 'react-dom'
+
 // Detail results title for a constituency
 class DetailResultsTitle extends React.Component {
    constructor(props){
