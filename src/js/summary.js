@@ -568,7 +568,7 @@ class SummaryResults extends React.Component{
         
         var results
         // Will come from database in future
-        jQuery.get("./data/summary.txt", function(data) {
+        jQuery.get("./src/data/summary.txt", function(data) {
             results = data
         }).done(function() {
            return results
