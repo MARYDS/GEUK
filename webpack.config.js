@@ -20,7 +20,13 @@ var config = {
                    'es2015', 
                    'react']
             }
-        }]
+        },
+        {
+            test: /\.css$/,
+            use: ['css-loader']
+        }
+
+        ]
     },
     devtool: 'source-map',
     devServer: {
