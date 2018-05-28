@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-var path = require('path');
+var path = require('path');;
 var BUILD_DIR = path.resolve(__dirname + '/dist');
 var APP_DIR = path.resolve(__dirname + '/src');
 
@@ -24,6 +24,10 @@ var config = {
         {
             test: /\.css$/,
             use: ['css-loader']
+        },
+        {
+            test: /\.(jpe?g|png|gif|svg|txt)$/i,
+            use: ['file-loader']
         }
 
         ]

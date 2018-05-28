@@ -4,6 +4,7 @@
 
 import React from 'react'
 import {render} from 'react-dom'
+var $ = require("jquery")
 
 // Detail results title for a constituency
 class DetailResultsTitle extends React.Component {
@@ -1026,5 +1027,17 @@ class DetailResults extends React.Component {
 
 }
 
+
+// JQuery to keep details for constituency on screen when scrolling
+	$().ready(function() {
+		  var $scrollingDiv = $("#detailResultsArea");
+    
+      $(window).scroll(function(){	
+			$scrollingDiv
+				.stop()
+        .animate({"marginTop": ($(window).scrollTop()) + "px"}, 300);	
+				//.animate({"marginTop": ($(window).scrollTop()) + "px"}, 300);			
+		  });
+	}); 
 
 export default DetailResults;
