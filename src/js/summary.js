@@ -4,7 +4,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-import YearSelection from './regionselection.js';
+import YearSelection from './yearselection.js';
 import RegionSelection from './regionselection.js';
 import PartySelection from './partyselection.js';
 import SortOrderSelection from './sortorder.js';
