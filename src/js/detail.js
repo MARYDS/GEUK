@@ -5,7 +5,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 var $ = require("jquery")
-var detailData = require("./detaildata.js");
+var detailData = require("./detaildata.js")
 
 // Detail results title for a constituency
 class DetailResultsTitle extends React.Component {
