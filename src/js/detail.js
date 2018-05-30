@@ -4,6 +4,7 @@
 
 import React from 'react'
 import {render} from 'react-dom'
+import EURefResults from './euref.js';
 var $ = require("jquery")
 var detailData = require("./detaildata.js")
 
@@ -21,18 +22,36 @@ class DetailResultsTitle extends React.Component {
    }
 }
 
+function DrawPieChartSegment(canvas, context, arcSize, colour, startingAngle) {
+    context.save();
+    var centerX = Math.floor(canvas.width / 2)
+    var centerY = Math.floor(canvas.height / 2)
+    var radius = Math.floor(canvas.width / 2)
+ 
+    var endingAngle = startingAngle + arcSize
+ 
+    context.beginPath()
+    context.moveTo(centerX, centerY)
+    context.arc(centerX, centerY, radius, startingAngle, endingAngle, false)
+    context.closePath()
+ 
+    context.fillStyle = colour
+    context.fill()
+ 
+    context.restore() 
+}
+
 // Detail overall results for a constituency - piechart section
 class DetailResultsOverallLeft extends React.Component {
    constructor(props){
       super(props) 
       this.updateCanvasLeft = this.updateCanvasLeft.bind(this)
-      this.drawSegment = this.drawSegment.bind(this)       
    }
   
    shouldComponentUpdate(nextProps, nextState) {
       return true
    }
-  //
+  
    componentDidMount() {
       this.updateCanvasLeft()
    }
@@ -41,6 +60,7 @@ class DetailResultsOverallLeft extends React.Component {
       this.updateCanvasLeft()
    }
   
+   // Pie chart of current election result
    updateCanvasLeft() {
        const canvas = this.refs.canvas
        const ctx = canvas.getContext('2d')
@@ -60,28 +80,9 @@ class DetailResultsOverallLeft extends React.Component {
      
        var startingAngle = 270 * Math.PI/180
        for (var i=0; i<arcSizes.length; i++) {
-          this.drawSegment(canvas, ctx, arcSizes[i], colours[i], startingAngle)
+          DrawPieChartSegment(canvas, ctx, arcSizes[i], colours[i], startingAngle)
           startingAngle += arcSizes[i]
        }  
-   }
-
-   drawSegment(canvas, context, arcSize, colour, startingAngle) {
-       context.save();
-       var centerX = Math.floor(canvas.width / 2)
-       var centerY = Math.floor(canvas.height / 2)
-       var radius = Math.floor(canvas.width / 2)
-
-       var endingAngle = startingAngle + arcSize
-
-       context.beginPath()
-       context.moveTo(centerX, centerY)
-       context.arc(centerX, centerY, radius, startingAngle, endingAngle, false)
-       context.closePath()
-
-       context.fillStyle = colour
-       context.fill()
-
-       context.restore()
    }
 
    render() {   
@@ -148,12 +149,11 @@ class DetailResultsOverallCenter extends React.Component {
    }
 }
 
-// Detail overall results for a constituency - Blank right header
+// Pie chart of previous election results for comparison
 class DetailResultsOverallRight extends React.Component {
    constructor(props){
       super(props) 
       this.updateCanvasRight = this.updateCanvasRight.bind(this)
-      this.drawSegment = this.drawSegment.bind(this)       
    }
   
    shouldComponentUpdate(nextProps, nextState) {
@@ -188,30 +188,11 @@ class DetailResultsOverallRight extends React.Component {
      
        var startingAngle = 270 * Math.PI/180
        for (var i=0; i<arcSizes.length; i++) {
-          this.drawSegment(canvas2, ctx, arcSizes[i], colours[i], startingAngle)
+          DrawPieChartSegment(canvas2, ctx, arcSizes[i], colours[i], startingAngle)
           startingAngle += arcSizes[i]
         }
       }
 
-      drawSegment(canvas, context, arcSize, colour, startingAngle) {
-         context.save();
-         var centerX = Math.floor(canvas.width / 2)
-         var centerY = Math.floor(canvas.height / 2)
-         var radius = Math.floor(canvas.width / 2)
-
-         var endingAngle = startingAngle + arcSize
-
-         context.beginPath()
-         context.moveTo(centerX, centerY)
-         context.arc(centerX, centerY, radius, startingAngle, endingAngle, false)
-         context.closePath()
-
-         context.fillStyle = colour
-         context.fill()
-
-         context.restore()
-      }
-  
       render() {   
          var detailId = "Detail_" + this.props.selectedConstituencyName + "prev"
 
@@ -274,7 +255,7 @@ class DetailResultsCandidate extends React.Component {
    }
 }
 
-// Detail results for all candidates in constit
+// Detail results for all candidates in constituency
 class DetailResultsDetails extends React.Component {
      constructor(props){
       super(props)
@@ -355,7 +336,8 @@ class DetailResults extends React.Component {
               <DetailResultsDetails selectedResultsYear={this.props.selectedResultsYear} 
                   selectedConstituencyName = {this.props.selectedConstituencyName} 
                   constitResults={constitResults[0]}
-           />
+              />
+              <EURefResults selectedConstituencyName = {this.props.selectedConstituencyName}/>
            </div>
          ) 
       } else {

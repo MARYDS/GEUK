@@ -344,3 +344,60 @@
   padding-left: 1em;
   padding-bottom: 0.5em;
 }
+
+
+.euResultsDetails {
+    clear: left;
+    margin-top: 1em;
+ } 
+.euResultTitle {
+    text-align: left;
+    padding-top: 0.5em;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+.euResultsDetailTable {
+   font-size: 0.8em;
+   border-collapse: collapse;
+   width: 100%;
+}
+.euResultsDetailTable th {
+   background-color: dimgrey;
+   color: white;
+   border: none;
+   font-weight: Normal;
+}
+ .euResultsColour {
+    width: 1%;
+    text-align: left;
+  }
+  .euResultsLocAuth {
+    width: 33%;
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.3em;
+  }
+  .euResultsElectorate {
+    width: 11%;
+    text-align: right;
+  }
+  .euResultsTurnoutPct {
+    width: 11%;
+    text-align: right;
+  }
+  .euResultsRemainVotes {
+    width: 11%;
+    text-align: right;
+  }
+  .euResultsRemainPct {
+    width: 11%;
+    text-align: right;
+  }
+  .euResultsLeaveVotes {
+    width: 11%;
+    text-align: right;
+  }
+  .euResultsLeavePct {
+    width: 11%;
+    text-align: right;
+  }
