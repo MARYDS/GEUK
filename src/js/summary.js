@@ -20,7 +20,7 @@ class MainTitle extends React.Component {
    }  
    render() {
       return (
-         <div className="mainTitleArea">
+         <div className="mainTitleArea" id="mainTitleArea">
             <h2 className="mainTitle">{this.props.selectedResultsYear}&nbsp;UK election results</h2>
          </div>         
       )

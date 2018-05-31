@@ -236,12 +236,15 @@ class DetailResultsCandidate extends React.Component {
       super(props)
    }
   
-   render() {  
+   render() { 
+      var photoId = "Photo" + this.props.candidateResult.name
+
       return ( 
         <tbody>
             <tr>               
                 <td className="resultsDetailColour" style={{backgroundColor: this.props.candidateResult.colour}}>&nbsp;</td> 
                 <td className="resultsDetailCandidate">{this.props.candidateResult.name}</td> 
+                <td className="resultsDetailPhoto" id={this.photoId} rowSpan="2">&nbsp;</td> 
                 <td className="resultsDetailVotes">{this.props.candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{this.props.candidateResult.shrPct.toFixed(1)}</td>
                 <td className="resultsDetailChange">{this.props.candidateResult.chgPct.toFixed(1)}</td>
@@ -252,6 +255,12 @@ class DetailResultsCandidate extends React.Component {
             </tr>
           </tbody>
         )
+
+        $.get(imageName)
+           .done(function() { 
+               var imageName = "./images/'" + this.props.candidateResult.name + "'"
+               document.getElementById(photoId).innerHTML = "<img src=" + imageName + "/>"
+        }) 
    }
 }
 
@@ -269,6 +278,7 @@ class DetailResultsDetails extends React.Component {
                      <tr>
                          <th>&nbsp;</th>
                          <th className="resultsDetailCandidate">Candidate</th>
+                         <th className="resultsDetailPhoto">&nbsp;</th>
                          <th className="resultsDetailVotes">Votes</th>
                          <th className="resultsDetailShare">Share %</th>
                          <th className="resultsDetailChange">Change %</th>
@@ -357,13 +367,20 @@ class DetailResults extends React.Component {
 
 // JQuery to keep details for constituency on screen when scrolling
 	$().ready(function() {
-		  var $scrollingDiv = $("#detailResultsArea");
+          var $scrollingDiv = $("#detailResultsArea");
     
-      $(window).scroll(function(){	
+      $(window).scroll(function(){
+ 
+            var scrollToPos 
+            if ($(window).scrollTop() > $('#mainTitleArea').height()) {
+                scrollToPos = $(window).scrollTop() - $('#mainTitleArea').height()
+            } else {
+                scrollToPos = 0
+            }
+
 			$scrollingDiv
 				.stop()
-        .animate({"marginTop": ($(window).scrollTop()) + "px"}, 300);	
-				//.animate({"marginTop": ($(window).scrollTop()) + "px"}, 300);			
+                .animate({"marginTop": (scrollToPos) + "px"}, 300);				
 		  });
 	}); 
 
