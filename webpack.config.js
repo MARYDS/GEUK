@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var path = require('path');;
 var BUILD_DIR = path.resolve(__dirname + '/dist');
 var APP_DIR = path.resolve(__dirname + '/src');
+var IMAGE_DIR = path.resolve(__dirname + '/images');
 
 var config = {
     entry: APP_DIR + '/js/app.js',
@@ -11,24 +12,31 @@ var config = {
         publicPath: '/'
     },
     module: {
-        rules: [{
-            test: /\.jsx?/,
-            include: APP_DIR,
-            loader: 'babel-loader',
-            query: {
-               presets: [
+        rules: [
+            {
+                test: /\.jsx?/,
+                include: APP_DIR,
+                loader: 'babel-loader',
+                query: {
+                presets: [
                    'es2015', 
                    'react']
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(jpg|png)$/,
+                include: IMAGE_DIR,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: '[path][name].[ext]'
+                    }
+                }
             }
-        },
-        {
-            test: /\.css$/,
-            use: ['css-loader']
-        },
-        {
-            test: /\.(jpe?g|png|gif|svg|txt)$/i,
-            use: ['file-loader']
-        }
 
         ]
     },

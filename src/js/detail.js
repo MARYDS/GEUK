@@ -7,6 +7,8 @@ import {render} from 'react-dom'
 import EURefResults from './euref.js';
 var $ = require("jquery")
 var detailData = require("./detaildata.js")
+var images = require.context('../../images', true);
+
 
 // Detail results title for a constituency
 class DetailResultsTitle extends React.Component {
@@ -238,13 +240,17 @@ class DetailResultsCandidate extends React.Component {
   
    render() { 
       var photoId = "Photo" + this.props.candidateResult.name
+      var photoImg = images("./blank.jpg") 
+      if (this.props.candidateResult.photo == "Y") {
+          photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
+      }
 
       return ( 
         <tbody>
             <tr>               
                 <td className="resultsDetailColour" style={{backgroundColor: this.props.candidateResult.colour}}>&nbsp;</td> 
                 <td className="resultsDetailCandidate">{this.props.candidateResult.name}</td> 
-                <td className="resultsDetailPhoto" id={this.photoId} rowSpan="2">&nbsp;</td> 
+                <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50"/></td> 
                 <td className="resultsDetailVotes">{this.props.candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{this.props.candidateResult.shrPct.toFixed(1)}</td>
                 <td className="resultsDetailChange">{this.props.candidateResult.chgPct.toFixed(1)}</td>
@@ -255,12 +261,6 @@ class DetailResultsCandidate extends React.Component {
             </tr>
           </tbody>
         )
-
-        $.get(imageName)
-           .done(function() { 
-               var imageName = "./images/'" + this.props.candidateResult.name + "'"
-               document.getElementById(photoId).innerHTML = "<img src=" + imageName + "/>"
-        }) 
    }
 }
 
@@ -285,7 +285,10 @@ class DetailResultsDetails extends React.Component {
                       </tr>
                   </thead> 
                     {this.props.constitResults.detailResult.map(candRes => 
-                         <DetailResultsCandidate candidateResult = {candRes} key={candRes.name} />
+                         <DetailResultsCandidate 
+                              candidateResult = {candRes}  
+                              selectedConstituencyName = {this.props.selectedConstituencyName} 
+                              key={candRes.name} />
                     )} 
                    
               </table> 
