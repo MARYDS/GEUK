@@ -15,10 +15,12 @@ class DetailResultsTitle extends React.Component {
    constructor(props){
       super(props)
    }  
-   render() {    
+   render() {  
+      var wikiArticle = "https://en.wikipedia.org/wiki/" + this.props.selectedConstituencyName.replace(" ", "_") + "_(UK_Parliament_constituency)"
+
       return (  
          <div className="detailResultsTitleArea">
-            <h3 className="detailResultsTitle">{this.props.selectedConstituencyName}</h3>
+            <h3 className="detailResultsTitle"><a href={wikiArticle} target="_blank">{this.props.selectedConstituencyName}</a></h3>
          </div>  
       )    
    }
@@ -242,7 +244,7 @@ class DetailResultsCandidate extends React.Component {
       var photoId = "Photo" + this.props.candidateResult.name
       var photoImg = images("./blank.jpg") 
       if (this.props.candidateResult.photo == "Y") {
-          photoImg = images("../" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
+          photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
       }
 
       return ( 
