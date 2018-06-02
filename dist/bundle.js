@@ -22538,7 +22538,7 @@ var EURefResults = function (_React$Component3) {
                { className: 'euResultsDetails' },
                _react2.default.createElement(
                   'span',
-                  { 'class': 'euResultTitle' },
+                  { className: 'euResultTitle' },
                   'EU Referendum'
                ),
                _react2.default.createElement(

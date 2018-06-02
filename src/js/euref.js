@@ -81,7 +81,7 @@ class EURefResults extends React.Component {
       if (constitEUResults.length > 0) {
          return (  
             <div className="euResultsDetails">
-                <span class="euResultTitle">EU Referendum</span>
+                <span className="euResultTitle">EU Referendum</span>
                 <table className="euResultsDetailTable"> 
                     <EURefResultsHeading />
                     {constitEUResults[0].locAuthResults.map(locAuth => 
