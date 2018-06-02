@@ -242,7 +242,7 @@ class DetailResultsCandidate extends React.Component {
       var photoId = "Photo" + this.props.candidateResult.name
       var photoImg = images("./blank.jpg") 
       if (this.props.candidateResult.photo == "Y") {
-          photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
+          photoImg = images("../" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
       }
 
       return ( 
