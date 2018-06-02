@@ -33,7 +33,7 @@ var config = {
                 use: {
                     loader: "file-loader",
                     options: {
-                        name: '[path][name].[ext]'
+                        name: 'public/[path][name].[ext]'
                     }
                 }
             }

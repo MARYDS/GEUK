@@ -4,6 +4,9 @@
 .mainResultsPage {
     font-family: tahoma, helvetica, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 /* Heading for year title */
 .mainTitleArea {
     display: block;
