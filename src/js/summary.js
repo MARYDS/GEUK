@@ -20,9 +20,14 @@ class MainTitle extends React.Component {
    }  
    render() {
       return (
-         <div className="mainTitleArea" id="mainTitleArea">
-            <h2 className="mainTitle">{this.props.selectedResultsYear}&nbsp;UK election results</h2>
-         </div>         
+        <div>
+            <div className="mainTitleArea" id="mainTitleArea">
+                <h2 className="mainTitle">{this.props.selectedResultsYear}&nbsp;UK election results</h2>
+            </div> 
+            <div className="mainTitleBlock">
+                <h2 className="mainTitle">{this.props.selectedResultsYear}&nbsp;UK election results</h2>
+            </div>
+        </div>        
       )
    }    
 }
@@ -34,6 +39,7 @@ class MainFooter extends React.Component {
    }  
    render() {
       return (
+        <div>
          <div className="mainFooterArea">
             <span className="mainFooter">2017 Election results mainly from&nbsp;  
 <a href="http://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7979">House of Commons library briefing</a> and news media reports,&nbsp;
@@ -55,7 +61,11 @@ class MainFooter extends React.Component {
             >UK Parliament Beta site</a>, which are under an <a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a> license.
             </span>&nbsp;
 
-         </div>         
+         </div> 
+         <div  className="mainFooterBlock">
+         &nbsp;
+         </div>
+       </div>            
       )
    }    
 }

@@ -306,6 +306,22 @@ class DetailResults extends React.Component {
       this.getResults = this.getResults.bind(this)       
    }
   
+   componentDidUpdate() {
+      var $scrollingDiv = $("#detailResultsArea");
+    
+      var scrollToPos 
+      if ($(window).scrollTop() > $('#mainTitleArea').height()) {
+          scrollToPos = $(window).scrollTop()
+              //scrollToPos = $(window).scrollTop() - $('#mainTitleArea').height()
+      } else {
+          scrollToPos = 0
+      }
+
+      $scrollingDiv
+         .stop()
+         .animate({"marginTop": (scrollToPos) + "px"}, 300);				
+   }
+
    render() {
 
       // Get all the constituency results
@@ -370,23 +386,25 @@ class DetailResults extends React.Component {
 }
 
 
-// JQuery to keep details for constituency on screen when scrolling
-	$().ready(function() {
+// JQuery to keep details for constituency on screen when scrolling back up
+$().ready(function() {
           var $scrollingDiv = $("#detailResultsArea");
     
       $(window).scroll(function(){
  
             var scrollToPos 
-            if ($(window).scrollTop() > $('#mainTitleArea').height()) {
-                scrollToPos = $(window).scrollTop() - $('#mainTitleArea').height()
-            } else {
-                scrollToPos = 0
+            if (parseInt($scrollingDiv.css("marginTop")) > $(window).scrollTop()) {
+                if ($(window).scrollTop() > $('#mainTitleArea').height()) {
+                   scrollToPos = $(window).scrollTop()
+                } else {
+                    scrollToPos = 0
+                }
             }
 
 			$scrollingDiv
 				.stop()
                 .animate({"marginTop": (scrollToPos) + "px"}, 300);				
-		  });
-	}); 
+	   });
+}); 
 
 export default DetailResults;
