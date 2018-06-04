@@ -246,7 +246,7 @@ class DetailResultsCandidate extends React.Component {
       if (this.props.candidateResult.photo == "Y") {
           photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
       }
-      var wikiLink = "#"
+      var wikiLink = "javascript:void(0);"
       if (this.props.candidateResult.wiki && this.props.candidateResult.wiki != "") {
         wikiLink = "https://en.wikipedia.org/wiki/" + this.props.candidateResult.wiki
       }

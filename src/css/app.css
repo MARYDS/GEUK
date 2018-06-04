@@ -346,7 +346,7 @@
   padding-top: 0.5em;
 }
 .resultsDetailCandidate a {
-  decoration: none;
+  text-decoration: none;
 }
 .resultsDetailPhoto {
     width: 10%;
