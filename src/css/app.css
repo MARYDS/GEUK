@@ -347,6 +347,7 @@
 }
 .resultsDetailCandidate a {
   text-decoration: none;
+  color: black;
 }
 .resultsDetailPhoto {
     width: 10%;
