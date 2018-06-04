@@ -246,12 +246,15 @@ class DetailResultsCandidate extends React.Component {
       if (this.props.candidateResult.photo == "Y") {
           photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
       }
-
+      var wikiLink = "#"
+      if (this.props.candidateResult.wiki && this.props.candidateResult.wiki != "") {
+        wikiLink = "https://en.wikipedia.org/wiki/" + this.props.candidateResult.wiki
+      }
       return ( 
         <tbody>
             <tr>               
                 <td className="resultsDetailColour" style={{backgroundColor: this.props.candidateResult.colour}}>&nbsp;</td> 
-                <td className="resultsDetailCandidate">{this.props.candidateResult.name}</td> 
+                <td className="resultsDetailCandidate"><a href={wikiLink} target="_blank">{this.props.candidateResult.name}</a></td> 
                 <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50"/></td> 
                 <td className="resultsDetailVotes">{this.props.candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{this.props.candidateResult.shrPct.toFixed(1)}</td>
