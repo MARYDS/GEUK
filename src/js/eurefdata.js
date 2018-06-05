@@ -39,7 +39,7 @@ var euRefData = [
     {constit: 'Belfast South', locAuthResults:  [ {name: 'Northern Ireland', wards: '(23/583)', electorate: 1260955, topct: 62.69, remain: 440707, remainpct: 55.78, leave: 349442, leavepct: 44.22} ]}, 
     {constit: 'Belfast West', locAuthResults:  [ {name: 'Northern Ireland', wards: '(19/583)', electorate: 1260955, topct: 62.69, remain: 440707, remainpct: 55.78, leave: 349442, leavepct: 44.22} ]}, 
     {constit: 'Bermondsey and Old Southwark', locAuthResults:  [ {name: 'Southwark', wards: '(9/21)', electorate: 195875, topct: 66.2, remain: 94293, remainpct: 72.81, leave: 35209, leavepct: 27.19} ]}, 
-    {constit: 'Berwick-upon-Tweed', locAuthResults:  [ {name: 'Northumberland', wards: '(17/70)', electorate: 240496, topct: 74.35, remain: 82022, remainpct: 45.89, leave: 96699, leavepct: 54.11} ]}, 
+    {constit: 'Berwick-Upon-Tweed', locAuthResults:  [ {name: 'Northumberland', wards: '(17/70)', electorate: 240496, topct: 74.35, remain: 82022, remainpct: 45.89, leave: 96699, leavepct: 54.11} ]}, 
     {constit: 'Berwickshire, Roxburgh and Selkirk', locAuthResults:  [ {name: 'Scottish Borders', wards: '(11/14)', electorate: 88440, topct: 73.44, remain: 37952, remainpct: 58.47, leave: 26962, leavepct: 41.53} ]}, 
     {constit: 'Bethnal Green and Bow', locAuthResults:  [ {name: 'Tower Hamlets', wards: '(9/21)', electorate: 167820, topct: 64.6, remain: 73011, remainpct: 67.46, leave: 35224, leavepct: 32.54} ]}, 
     {constit: 'Beverley and Holderness', locAuthResults:  [ {name: 'East Riding of Yorkshire', wards: '(7/26)', electorate: 266047, topct: 74.81, remain: 78779, remainpct: 39.6, leave: 120136, leavepct: 60.4} ]}, 
@@ -388,7 +388,7 @@ var euRefData = [
     {constit: 'Newcastle upon Tyne Central', locAuthResults:  [ {name: 'Newcastle upon Tyne', wards: '(8/26)', electorate: 190735, topct: 67.67, remain: 65405, remainpct: 50.7, leave: 63598, leavepct: 49.3} ]}, 
     {constit: 'Newcastle upon Tyne East', locAuthResults:  [ {name: 'Newcastle upon Tyne', wards: '(9/26)', electorate: 190735, topct: 67.67, remain: 65405, remainpct: 50.7, leave: 63598, leavepct: 49.3} ]}, 
     {constit: 'Newcastle upon Tyne North', locAuthResults:  [ {name: 'Newcastle upon Tyne', wards: '(9/26)', electorate: 190735, topct: 67.67, remain: 65405, remainpct: 50.7, leave: 63598, leavepct: 49.3} ]}, 
-    {constit: 'Newcastle-under-Lyme', locAuthResults:  [ {name: 'Newcastle-under-Lyme', wards: '(17/24)', electorate: 92816, topct: 74.3, remain: 25477, remainpct: 36.96, leave: 43457, leavepct: 63.04} ]}, 
+    {constit: 'Newcastle-Under-Lyme', locAuthResults:  [ {name: 'Newcastle-under-Lyme', wards: '(17/24)', electorate: 92816, topct: 74.3, remain: 25477, remainpct: 36.96, leave: 43457, leavepct: 63.04} ]}, 
     {constit: 'Newport East', locAuthResults:  [ {name: 'Monmouthshire', wards: '(8/42)', electorate: 71607, topct: 77.74, remain: 28061, remainpct: 50.44, leave: 27569, leavepct: 49.56}, {name: 'Newport', wards: '(8/20)', electorate: 104977, topct: 70.21, remain: 32413, remainpct: 44.01, leave: 41236, leavepct: 55.99} ]}, 
     {constit: 'Newport West', locAuthResults:  [ {name: 'Newport', wards: '(12/20)', electorate: 104977, topct: 70.21, remain: 32413, remainpct: 44.01, leave: 41236, leavepct: 55.99} ]}, 
     {constit: 'Newry and Armagh', locAuthResults:  [ {name: 'Northern Ireland', wards: '(39/583)', electorate: 1260955, topct: 62.69, remain: 440707, remainpct: 55.78, leave: 349442, leavepct: 44.22} ]}, 
@@ -553,7 +553,7 @@ var euRefData = [
     {constit: 'Stone', locAuthResults:  [ {name: 'Newcastle-under-Lyme', wards: '(2/24)', electorate: 92816, topct: 74.3, remain: 25477, remainpct: 36.96, leave: 43457, leavepct: 63.04}, {name: 'Stafford', wards: '(9/25)', electorate: 99612, topct: 77.83, remain: 34098, remainpct: 44.01, leave: 43386, leavepct: 55.99}, {name: 'Staffordshire Moorlands', wards: '(5/27)', electorate: 79347, topct: 75.36, remain: 21076, remainpct: 35.27, leave: 38684, leavepct: 64.73} ]}, 
     {constit: 'Stourbridge', locAuthResults:  [ {name: 'Dudley', wards: '(7/24)', electorate: 244516, topct: 71.71, remain: 56780, remainpct: 32.4, leave: 118446, leavepct: 67.6} ]}, 
     {constit: 'Strangford', locAuthResults:  [ {name: 'Northern Ireland', wards: '(27/583)', electorate: 1260955, topct: 62.69, remain: 440707, remainpct: 55.78, leave: 349442, leavepct: 44.22} ]}, 
-    {constit: 'Stratford-on-Avon', locAuthResults:  [ {name: 'Stratford-on-Avon', wards: '(29/41)', electorate: 98014, topct: 80.82, remain: 38341, remainpct: 48.44, leave: 40817, leavepct: 51.56} ]}, 
+    {constit: 'Stratford-On-Avon', locAuthResults:  [ {name: 'Stratford-on-Avon', wards: '(29/41)', electorate: 98014, topct: 80.82, remain: 38341, remainpct: 48.44, leave: 40817, leavepct: 51.56} ]}, 
     {constit: 'Streatham', locAuthResults:  [ {name: 'Lambeth', wards: '(8/21)', electorate: 210800, topct: 67.44, remain: 111584, remainpct: 78.62, leave: 30340, leavepct: 21.38} ]}, 
     {constit: 'Stretford and Urmston', locAuthResults:  [ {name: 'Trafford', wards: '(9/21)', electorate: 165294, topct: 75.86, remain: 72293, remainpct: 57.69, leave: 53018, leavepct: 42.31} ]}, 
     {constit: 'Stroud', locAuthResults:  [ {name: 'Stroud', wards: '(28/31)', electorate: 92631, topct: 80.03, remain: 40446, remainpct: 54.61, leave: 33618, leavepct: 45.39} ]}, 
@@ -623,7 +623,7 @@ var euRefData = [
     {constit: 'West Worcestershire', locAuthResults:  [ {name: 'Malvern Hills', wards: '(22/22)', electorate: 60217, topct: 80.61, remain: 23203, remainpct: 47.84, leave: 25294, leavepct: 52.16}, {name: 'Wychavon', wards: '(5/32)', electorate: 94497, topct: 80.88, remain: 32188, remainpct: 42.14, leave: 44201, leavepct: 57.86} ]}, 
     {constit: 'Westminster North', locAuthResults:  [ {name: 'Westminster', wards: '(10/20)', electorate: 120524, topct: 64.99, remain: 53928, remainpct: 68.97, leave: 24268, leavepct: 31.03} ]}, 
     {constit: 'Westmorland and Lonsdale', locAuthResults:  [ {name: 'South Lakeland', wards: '(36/47)', electorate: 81948, topct: 79.78, remain: 34531, remainpct: 52.86, leave: 30800, leavepct: 47.14} ]}, 
-    {constit: 'Weston-super-Mare', locAuthResults:  [ {name: 'North Somerset', wards: '(15/35)', electorate: 160860, topct: 77.47, remain: 59572, remainpct: 47.83, leave: 64976, leavepct: 52.17} ]}, 
+    {constit: 'Weston-Super-Mare', locAuthResults:  [ {name: 'North Somerset', wards: '(15/35)', electorate: 160860, topct: 77.47, remain: 59572, remainpct: 47.83, leave: 64976, leavepct: 52.17} ]}, 
     {constit: 'Wigan', locAuthResults:  [ {name: 'Wigan', wards: '(8/25)', electorate: 235982, topct: 69.23, remain: 58942, remainpct: 36.1, leave: 104331, leavepct: 63.9} ]}, 
     {constit: 'Wimbledon', locAuthResults:  [ {name: 'Merton', wards: '(10/20)', electorate: 136352, topct: 73.49, remain: 63003, remainpct: 62.94, leave: 37097, leavepct: 37.06} ]}, 
     {constit: 'Winchester', locAuthResults:  [ {name: 'Eastleigh', wards: '(4/19)', electorate: 97280, topct: 78.28, remain: 36172, remainpct: 47.55, leave: 39902, leavepct: 52.45}, {name: 'Winchester', wards: '(15/26)', electorate: 89595, topct: 81.26, remain: 42878, remainpct: 58.93, leave: 29886, leavepct: 41.07} ]}, 
@@ -647,8 +647,9 @@ var euRefData = [
     {constit: 'Wyre Forest', locAuthResults:  [ {name: 'Wyre Forest', wards: '(12/12)', electorate: 77878, topct: 74.05, remain: 21240, remainpct: 36.85, leave: 36392, leavepct: 63.15} ]}, 
     {constit: 'Wythenshawe and Sale East', locAuthResults:  [ {name: 'Manchester', wards: '(5/32)', electorate: 338064, topct: 59.77, remain: 121823, remainpct: 60.36, leave: 79991, leavepct: 39.64}, {name: 'Trafford', wards: '(3/21)', electorate: 165294, topct: 75.86, remain: 72293, remainpct: 57.69, leave: 53018, leavepct: 42.31} ]}, 
     {constit: 'Yeovil', locAuthResults:  [ {name: 'South Somerset', wards: '(24/39)', electorate: 126495, topct: 78.69, remain: 42527, remainpct: 42.75, leave: 56940, leavepct: 57.25} ]}, 
-    {constit: 'Ynys Mªn', locAuthResults:  [ {name: 'Isle of Anglesey', wards: '(11/11)', electorate: 51445, topct: 73.82, remain: 18618, remainpct: 49.06, leave: 19333, leavepct: 50.94} ]}, 
+    {constit: 'Ynys Mon', locAuthResults:  [ {name: 'Isle of Anglesey', wards: '(11/11)', electorate: 51445, topct: 73.82, remain: 18618, remainpct: 49.06, leave: 19333, leavepct: 50.94} ]}, 
     {constit: 'York Central', locAuthResults:  [ {name: 'York', wards: '(12/25)', electorate: 155157, topct: 70.69, remain: 63617, remainpct: 58.04, leave: 45983, leavepct: 41.96} ]}, 
     {constit: 'York Outer', locAuthResults:  [ {name: 'York', wards: '(13/25)', electorate: 155157, topct: 70.69, remain: 63617, remainpct: 58.04, leave: 45983, leavepct: 41.96} ]}
-    ]
+   ]
+
 module.exports = euRefData
