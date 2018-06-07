@@ -244,17 +244,19 @@ class DetailResultsCandidate extends React.Component {
       var photoId = "Photo" + this.props.candidateResult.name
       var photoImg = images("./blank.jpg") 
       if (this.props.candidateResult.photo == "Y") {
-          photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")
+          photoImg = images("./" + this.props.candidateResult.name + "_" + this.props.selectedConstituencyName + ".jpg")  
       }
       var wikiLink = "javascript:void(0);"
+      var linkClass = "resultsDetailCandidateNoLink"
       if (this.props.candidateResult.wiki && this.props.candidateResult.wiki != "") {
         wikiLink = "https://en.wikipedia.org/wiki/" + this.props.candidateResult.wiki
+        linkClass = "resultsDetailCandidateLink" 
       }
       return ( 
         <tbody>
             <tr>               
                 <td className="resultsDetailColour" style={{backgroundColor: this.props.candidateResult.colour}}>&nbsp;</td> 
-                <td className="resultsDetailCandidate"><a href={wikiLink} target="_blank">{this.props.candidateResult.name}</a></td> 
+                <td className="resultsDetailCandidate"><a href={wikiLink} target="_blank" className={linkClass}>{this.props.candidateResult.name}</a></td> 
                 <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50"/></td> 
                 <td className="resultsDetailVotes">{this.props.candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{this.props.candidateResult.shrPct.toFixed(1)}</td>

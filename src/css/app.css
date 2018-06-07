@@ -345,7 +345,10 @@
   padding-left: 1em;
   padding-top: 0.5em;
 }
-.resultsDetailCandidate a {
+.resultsDetailCandidateLink {
+  text-decoration: none;
+}
+.resultsDetailCandidateNoLink {
   text-decoration: none;
   color: black;
 }

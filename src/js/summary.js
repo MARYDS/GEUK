@@ -113,7 +113,7 @@ class SummaryItem extends React.Component {
                  {this.props.conRes.mp}
                </td>
                <td className="summListL1 summListMar">
-                 {this.props.conRes.mar.toLocaleString()}
+                 {this.props.conRes.mar.toFixed(1)}
                </td>
                <td className="summListL1 summListSec1" 
                    style={{backgroundColor: this.props.conRes.sec}}
