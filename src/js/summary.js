@@ -466,7 +466,7 @@ class SummaryResults extends React.Component{
    
           return(res[0] || res[1] || res[2] || res[3] || res[4])                     
        }) // sort
-       
+ 
        return sortedResults
     }
   
