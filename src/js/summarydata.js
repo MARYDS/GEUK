@@ -1979,7 +1979,8 @@ var summaryData =
 {year:"2017",con:"Islwyn",mp:"Chris Evans",mprev:"Evans Chris",mar: 31.62,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"},
 {year:"2017",con:"Vale of Glamorgan",mp:"Alun Cairns",mprev:"Cairns Alun",mar: 4.08,reg:"Wales",party:"Conservative",prev:"#0087DC",curr:"#0087DC",sec:"#DC241f",prevparty: "Conservative",secparty:"Labour"},
 {year:"2017",con:"Cardiff West",mp:"Kevin Brennan",mprev:"Brennan Kevin",mar: 26.92,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"},
-{year:"2017",con:"Cardiff South and Penarth",mp:"Stephen Doughty",mprev:"Doughty Stephen",mar: 29.3,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"}
+{year:"2017",con:"Cardiff South and Penarth",mp:"Stephen Doughty",mprev:"Doughty Stephen",mar: 29.3,reg:"Wales",party:"Labour",prev:"#DC241f",curr:"#DC241f",sec:"#0087DC",prevparty: "Labour",secparty:"Conservative"},
+{year:"2017+",con:"West Tyrone",mp:"Órfhlaith Begley",mprev:"Begley Órfhlaith",mar: 22.71,reg:"Northern Ireland",party:"Sinn Fein",prev:"#008800",curr:"#008800",sec:"#D46A4C",prevparty: "Sinn Fein",secparty:"Democratic Unionist Party"}
 ]
 
 module.exports = summaryData
