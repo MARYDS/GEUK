@@ -168,6 +168,7 @@ class SummaryResults extends React.Component{
                       selectSortOptionsDisplayed: false,
                       selectedConstituencyName: "Basildon and Billericay",
                       years: [
+                                {year: "2017+", checked: false},                           
                                 {year: "2017", checked: true}, 
                                 {year: "2015+", checked: false},
                                 {year: "2015", checked: false},
