@@ -135,7 +135,7 @@
    outline: none;
    padding: 0.5em;
    float: left;
-   width: 20%;
+   width: 33%;
    background-color: lightgrey;
    cursor: move;
    font-size: 0.6em;
@@ -323,6 +323,7 @@
 
 .detailResultsDetail {
    clear: left;
+   width: 100%;
 }
 .resultsDetailTable {
   font-size: 0.8em;
