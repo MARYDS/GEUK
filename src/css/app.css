@@ -3,6 +3,7 @@
 /* properties for entire page */
 .mainResultsPage {
     font-family: tahoma, helvetica, sans-serif;
+    width: 100%;
 }
 * {
   box-sizing: border-box;
