@@ -13,14 +13,14 @@ class YearItem extends React.Component {
   
    render() {
       return (
-         <span className="resultsSummaryYearField">
+         <label className="resultsSummaryYearField">
               <input type="radio" name="year" 
                      onChange={this.props.yearChangeHandler}
                      value={this.props.year.year} 
                      checked={this.props.year.checked} 
                 />             
           {this.props.year.year}
-         </span>
+         </label>
       )
    }
 }        

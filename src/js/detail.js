@@ -257,7 +257,7 @@ class DetailResultsCandidate extends React.Component {
             <tr>               
                 <td className="resultsDetailColour" style={{backgroundColor: this.props.candidateResult.colour}}>&nbsp;</td> 
                 <td className="resultsDetailCandidate"><a href={wikiLink} target="_blank" className={linkClass}>{this.props.candidateResult.name}</a></td> 
-                <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50"/></td> 
+                <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50" alt=""/></td> 
                 <td className="resultsDetailVotes">{this.props.candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{this.props.candidateResult.shrPct.toFixed(1)}</td>
                 <td className="resultsDetailChange">{this.props.candidateResult.chgPct.toFixed(1)}</td>
@@ -363,7 +363,7 @@ class DetailResults extends React.Component {
       // We have results for the constituency, output them     
       if (constitResults.length > 0) {
          return ( 
-           <div className="detailResultsArea" id="detailResultsArea">   
+           <section className="detailResultsArea" id="detailResultsArea">   
               <DetailResultsHeading selectedResultsYear={this.props.selectedResultsYear} 
                   selectedConstituencyName = {this.props.selectedConstituencyName} 
                   constitResults={constitResults[0]}
@@ -374,7 +374,7 @@ class DetailResults extends React.Component {
                   constitResults={constitResults[0]}
               />
               <EURefResults selectedConstituencyName = {this.props.selectedConstituencyName}/>
-           </div>
+           </section>
          ) 
       } else {
            return ( 

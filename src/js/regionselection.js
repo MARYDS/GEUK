@@ -13,14 +13,14 @@ class RegionItem extends React.Component {
   
    render() {
       return (
-         <span className="resultsSummaryRegionField">
+         <label className="resultsSummaryRegionField">
               <input type="checkbox" name="regions" 
                      onChange={this.props.regionChangeHandler}
                      value={this.props.region.regionName} 
                      checked={this.props.region.checked} 
                 />             
           {this.props.region.regionName}
-         </span>
+         </label>
       )
    }
 }        

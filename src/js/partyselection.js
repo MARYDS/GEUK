@@ -13,14 +13,14 @@ class PartyItem extends React.Component {
   
    render() {
       return (
-         <span className="resultsSummaryPartyField">
+         <label className="resultsSummaryPartyField">
               <input type="checkbox" name="parties" 
                      onChange={this.props.partyChangeHandler}
                      value={this.props.party.partyName} 
                      checked={this.props.party.checked} 
                 />             
           {this.props.party.partyName}
-         </span>
+         </label>
       )
    }
 }        
