@@ -178,6 +178,7 @@
    background-color: lightgrey;
    cursor: pointer;
    font-size: 0.6em;
+   font-family: tahoma, helvetica, sans-serif;
    width: 25%;
    height: 3em;
 }
