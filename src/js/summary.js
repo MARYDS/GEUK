@@ -53,7 +53,7 @@ class MainFooter extends React.Component {
             </span>
                     <span className="mainFooter">EU Referendum results mainly from&nbsp;
 <a href="https://www.electoralcommission.org.uk/our-work/our-research/electoral-data/electoral-data-files-and-reports"
-                        >Electoral Commission, Referendum on the UK's membership of the EU</a>, published 23
+                        >Electoral Commission, Referendum on the UK membership of the EU</a>, published 23
                       June 2016.&nbsp;
             </span>
                     <span className="mainFooter">MP photes from&nbsp;
