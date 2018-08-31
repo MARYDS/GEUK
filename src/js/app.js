@@ -1,8 +1,12 @@
 import React from 'react'
 import {render} from 'react-dom'
-import '../css/app.css'
+import {Provider} from 'react-redux'
+import {createStore} from 'redux';
 
-import SummaryResults from "./summary.js";
+import appState from './store/appState.js';
+import SummaryResults from "./components/container/SummaryResults.js";
+
+import '../css/app.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -11,9 +15,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <SummaryResults />
-      </div>
+      <Provider store = {createStore(appState)}>
+          <SummaryResults />
+      </Provider>
     );
   }
 }

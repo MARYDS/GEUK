@@ -12,9 +12,9 @@ var config = {
     entry: {
         bundle: APP_DIR + '/js/app.js',
         vendor: VENDOR_LIBS,
-        summarydata: APP_DIR + '/js/summarydata.js',
-        detaildata: APP_DIR + '/js/detaildata.js',
-        eurefdata: APP_DIR + '/js/eurefdata.js'
+        summarydata: APP_DIR + '/js/data/summarydata.js',
+        detaildata: APP_DIR + '/js/data/detaildata.js',
+        eurefdata: APP_DIR + '/js/data/eurefdata.js'
     },
     output: {
         path: BUILD_DIR,
