@@ -355,6 +355,9 @@
     padding-left: 1em;
     padding-top: 0.5em;
 }
+.resultsDetailImage {
+  max-height: 50px;
+}
 .resultsDetailVotes {
   width: 15%;
   text-align: right;
