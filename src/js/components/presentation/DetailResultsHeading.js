@@ -16,7 +16,7 @@ const DetailResultsHeading = ({
     year
 }) => {
     return (
-        <div className="detailResultsOverall" id="detailResultsOverall">
+        <article className="detailResultsOverall" id="detailResultsOverall">
             <DetailResultsTitle selectedConstituency={constituency} />
             <div>
                 <DetailResultsHeadingLeft constitResults={constitResults}
@@ -26,7 +26,7 @@ const DetailResultsHeading = ({
                     selectedConstituencyName={constituency}
                 />
             </div>
-        </div>
+        </article>
 
     )
 }

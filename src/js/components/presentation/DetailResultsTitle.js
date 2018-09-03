@@ -12,7 +12,7 @@ const DetailResultsTitle = ({
 
     return (
         <div className="detailResultsTitleArea">
-            <h3 className="detailResultsTitle"><a href={wikiArticle} target="_blank">{selectedConstituency}</a></h3>
+            <h3 className="detailResultsTitle"><a href={wikiArticle} title="Wikipedia page for constituency" target="_blank">{selectedConstituency}</a></h3>
         </div>
     )
 }

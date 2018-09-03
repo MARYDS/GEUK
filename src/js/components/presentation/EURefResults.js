@@ -19,7 +19,7 @@ const EURefResults = ({
     // We have results for the constituency, output them     
     if (constitEUResults.length > 0) {
         return (
-            <div className="euResultsDetails">
+            <article className="euResultsDetails">
                 <span className="euResultTitle">EU Referendum</span>
                 <table className="euResultsDetailTable">
                     <EURefResultsHeading />
@@ -27,7 +27,7 @@ const EURefResults = ({
                         <EURefResultsLocAuth locAuthResult={locAuth} key={locAuth.name} />
                     )}
                 </table>
-            </div>
+            </article>
         )
     } else {
         return (

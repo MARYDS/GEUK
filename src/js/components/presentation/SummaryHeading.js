@@ -9,9 +9,12 @@ const SummaryHeading = () => {
     return (
         <thead>
             <tr>
-                <th colSpan="2" className="summListCon">Constituency / Region</th>
-                <th colSpan="2" className="summListMP">Elected MP / Party</th>
-                <th colSpan="2" className="summListMar">Margin %</th>
+                <th className="summListPrev1">&nbsp;</th>
+                <th className="summListCon">Constituency / Region</th>
+                <th className="summListCurr1">&nbsp;</th>
+                <th className="summListMP">Elected MP / Party</th>
+                <th className="summListMar">Margin %</th>
+                <th className="summListSec1">&nbsp;</th>
             </tr>
         </thead>
     )

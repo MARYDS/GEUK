@@ -119,31 +119,32 @@ class SummaryResults extends React.Component {
                 <main>
                     <DetailResults 
                         selectedConstituencyName={this.state.selectedConstituencyName} />
+                    <section className="summaryResultsArea">
+                        <section id="summaryResultsHeading">
+                            <YearSelection />
+                            <RegionSelection />
+                            <PartySelection />
 
-                    <section id="summaryResultsHeading">
-                        <YearSelection />
-                        <RegionSelection />
-                        <PartySelection />
+                            <SortOrderSelection sortOrder={this.state.sortOrder}
+                                sortOrderChangeHandler={this.sortOrderChangeHandler}
+                                sortOrderClickHandler={this.sortOrderClickHandler}
+                                selectSortOptionsDisplayed={this.props.store.sortOptionsVisible} />
 
-                        <SortOrderSelection sortOrder={this.state.sortOrder}
-                            sortOrderChangeHandler={this.sortOrderChangeHandler}
-                            sortOrderClickHandler={this.sortOrderClickHandler}
-                            selectSortOptionsDisplayed={this.props.store.sortOptionsVisible} />
-
-                        <Search searchTerm={this.searchTerm}
-                                searchChangeHandler={this.searchChangeHandler}/>
-                        <ShowButtons />
-
+                            <Search searchTerm={this.searchTerm}
+                                    searchChangeHandler={this.searchChangeHandler}/>
+                            <ShowButtons />
+                        </section>
+                        <section className="resultsSummaryConstituencies">
+                            <table className="resultsSummaryTable">
+                                <SummaryHeading />
+                                {sortedFilteredResults.map(conRes =>
+                                    <SummaryItem conRes={conRes} key={conRes.con}
+                                    clickEventHandler={this.selectConstituencyClickHandler} />
+                                )}
+                            </table>
+                        </section>
                     </section>
-                    <section className="resultsSummaryConstituencies">
-                        <table className="resultsSummaryTable">
-                            <SummaryHeading />
-                            {sortedFilteredResults.map(conRes =>
-                                <SummaryItem conRes={conRes} key={conRes.con}
-                                clickEventHandler={this.selectConstituencyClickHandler} />
-                            )}
-                        </table>
-                    </section>
+
                 </main>
                 <MainFooter />
 

@@ -54,7 +54,7 @@ class DetailResultsHeadingLeft extends React.Component {
        return ( 
          <div className="detailResultsOverallLeft" id={detailId}>
              <span className="detailResultsOverallText">{this.props.constitResults.year}</span>
-             <canvas className="detailResultsOverallCanvas"  ref="canvas" width={120} height={120}/>
+             <canvas className="detailResultsOverallCanvas"  ref="canvas" width="100" height="100" />
          </div>
        )
     }

@@ -1,8 +1,10 @@
 function drawPieChartSegment(canvas, context, arcSize, colour, startingAngle) {
     context.save();
+    console.log("Width " + canvas.width)
+    console.log("Height" + canvas.height)
     var centerX = Math.floor(canvas.width / 2)
     var centerY = Math.floor(canvas.height / 2)
-    var radius = Math.floor(canvas.width / 2)
+    var radius = Math.floor(canvas.height / 2)
  
     var endingAngle = startingAngle + arcSize
  

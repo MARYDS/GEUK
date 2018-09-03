@@ -37,7 +37,7 @@ const ShowButtons = ({
     }
 
     return (
-        <div className="resultsSummaryMenuOptions">
+        <nav className="resultsSummaryMenuOptions">
             <ShowButton text={selectYear}
                 clickEventHandler={yearsClickHandler} />
             <ShowButton text={selectRegions}
@@ -46,7 +46,7 @@ const ShowButtons = ({
                 clickEventHandler={partiesClickHandler} />
             <ShowButton text={selectSortOptions}
                 clickEventHandler={sortOptionsClickHandler} />
-        </div>
+        </nav>
     )
 }
 

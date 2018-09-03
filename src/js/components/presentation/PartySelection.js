@@ -16,7 +16,7 @@ const PartySelection = ({
     if (partiesVisible) {
 
         return (
-            <div className="resultsSummaryPartyArea">
+            <article className="resultsSummaryPartyArea">
                 <form>
                     <fieldset className="resultsSummaryPartyFieldset">
                         <div className="resultsSummaryPartyButtons">
@@ -40,7 +40,7 @@ const PartySelection = ({
                         )}
                     </fieldset>
                 </form>
-            </div>
+            </article>
         )
     } else {
         return (null)

@@ -11,11 +11,11 @@ const DetailResultsConstituency = ({
     constituency
 }) => {
     return (
-        <div className="detailResultsDetails">
+        <article className="detailResultsDetails">
             <table className="resultsDetailTable">
                 <thead>
                     <tr>
-                        <th>&nbsp;</th>
+                        <th className="resultsDetailColour">&nbsp;</th>
                         <th className="resultsDetailCandidate">Candidate</th>
                         <th className="resultsDetailPhoto">&nbsp;</th>
                         <th className="resultsDetailVotes">Votes</th>
@@ -30,7 +30,7 @@ const DetailResultsConstituency = ({
                         key={candRes.name} />
                 )}
             </table>
-        </div>
+        </article>
     )
 }
 

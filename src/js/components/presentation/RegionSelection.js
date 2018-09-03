@@ -16,7 +16,7 @@ const RegionSelection = ({
     if (regionsVisible) {
 
         return (
-            <div className="resultsSummaryRegionArea">
+            <article className="resultsSummaryRegionArea">
                 <form>
                     <fieldset className="resultsSummaryRegionFieldset">
                         <div className="resultsSummaryRegionButtons">
@@ -39,7 +39,7 @@ const RegionSelection = ({
                         )}
                     </fieldset>
                 </form>
-            </div>
+            </article>
         )
 
     } else {

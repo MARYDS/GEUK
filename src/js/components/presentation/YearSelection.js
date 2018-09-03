@@ -14,7 +14,7 @@ const YearSelection = ({
 
     if (yearsVisible) {
         return (
-            <div className="resultsSummaryYearArea">
+            <article className="resultsSummaryYearArea">
                 <form>
                     <fieldset className="resultsSummaryYearFieldset">
                         {years.map(year =>
@@ -27,7 +27,7 @@ const YearSelection = ({
                         )}
                     </fieldset>
                 </form>
-            </div>
+            </article>
         )
     } else {
         return (null)

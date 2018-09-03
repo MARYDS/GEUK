@@ -13,7 +13,7 @@ class SortSelection extends React.Component {
    render() {
       if (this.props.selectSortOptionsDisplayed){
          return ( 
-            <div className="resultsSummarySortArea">
+            <article className="resultsSummarySortArea">
                <form>
                   <fieldset>
                       <span  className="resultsSummarySortAreaText">
@@ -28,7 +28,7 @@ class SortSelection extends React.Component {
                           )}
                  </fieldset>
                </form>  
-            </div>
+            </article>
          )
       } else {
            return null

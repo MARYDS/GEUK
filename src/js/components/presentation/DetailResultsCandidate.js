@@ -15,16 +15,18 @@ const DetailResultsCandidate = ({
         photoImg = images("./" + candidateResult.name + "_" + constituency + ".jpg")
     }
     var wikiLink = "javascript:void(0);"
+    var wikiTitle = ""
     var linkClass = "resultsDetailCandidateNoLink"
     if (candidateResult.wiki && candidateResult.wiki != "") {
         wikiLink = "https://en.wikipedia.org/wiki/" + candidateResult.wiki
         linkClass = "resultsDetailCandidateLink"
+        wikiTitle = "Wikipedia page for candidate"
     }
     return (
         <tbody>
             <tr>
                 <td className="resultsDetailColour" style={{ backgroundColor: candidateResult.colour }}>&nbsp;</td>
-                <td className="resultsDetailCandidate"><a href={wikiLink} target="_blank" className={linkClass}>{candidateResult.name}</a></td>
+                <td className="resultsDetailCandidate"><a href={wikiLink} title={wikiTitle} target="_blank" className={linkClass}>{candidateResult.name}</a></td>
                 <td className="resultsDetailPhoto" id={photoId} rowSpan="2"><img src={photoImg} height="50" width="50" alt="" /></td>
                 <td className="resultsDetailVotes">{candidateResult.votes.toLocaleString()}</td>
                 <td className="resultsDetailShare">{candidateResult.shrPct.toFixed(1)}</td>
