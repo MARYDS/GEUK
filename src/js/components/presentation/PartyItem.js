@@ -12,7 +12,7 @@ const PartyItem = ({
 }) => {
     return (
         <label className="resultsSummaryPartyField">
-            <input type="checkbox" name="parties"
+            <input type="checkbox" name="parties" className="resultsSummaryPartyFieldInputBox"
                 onChange={onChange}
                 value={partyName}
                 checked={checked}

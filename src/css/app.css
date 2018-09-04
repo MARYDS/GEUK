@@ -82,6 +82,9 @@
     width: 33%;
     font-size: 0.6em;
 }
+.resultsSummaryRegionFieldInputBox {
+  width: 15%;
+}
 .resultsSummaryRegionButtons {
     float: left;
 }
@@ -106,6 +109,9 @@
     float: left;
     width: 33%;
     font-size: 0.6em;
+}
+.resultsSummaryPartyFieldInputBox {
+  width: 15%;
 }
 .resultsSummaryPartyButtons {
     float: left;

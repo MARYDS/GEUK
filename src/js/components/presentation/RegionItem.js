@@ -12,7 +12,7 @@ const RegionItem = ({
 }) => {
     return (
         <label className="resultsSummaryRegionField">
-            <input type="checkbox" name="regions"
+            <input type="checkbox" name="regions" className="resultsSummaryRegionFieldInputBox"
                 onChange={onChange}
                 value={regionName}
                 checked={checked}
