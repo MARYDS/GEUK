@@ -12,7 +12,7 @@ const YearItem = ({
 }) => {
     return (
         <label className="resultsSummaryYearField">
-            <input type="radio" name="year"
+            <input type="radio" name="year" className="resultsSummaryYearFieldRadio"
                 onChange={onChange}
                 value={year}
                 checked={checked}
