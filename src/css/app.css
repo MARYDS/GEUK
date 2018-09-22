@@ -216,6 +216,7 @@
   background-color: #005251;
   color: white;
   border: none;
+  border-collapse: collapse;
   font-weight: normal;
 }
 
@@ -349,12 +350,14 @@
 .resultsDetailTable {
   font-size: 0.8em;
   border-collapse: collapse;
+  border: none;
   table-layout: fixed;
 }
 .resultsDetailTable th {
   background-color: #005251;
   color: white;
   border: none;
+  border-collapse: collapse;
   font-weight: Normal;
 }
 
