@@ -9,7 +9,6 @@
 
 /* properties for entire page */
 .mainResultsPage {
-  width: 99%;
   margin: auto;
 }
 /* Heading for year title */
@@ -18,8 +17,6 @@
     top: 0;
     position: fixed;
     background-color: #005251;
-    width: 99%;
-    margin: auto;
 }
 .mainTitle {
     text-align: center;
@@ -40,7 +37,6 @@
     position: fixed;  
     bottom: 0;
     line-height: 0.6em;
-    width: 99%;
     padding: 0.2em;
 }
 .mainFooter {
