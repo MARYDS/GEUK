@@ -41,7 +41,7 @@
     bottom: 0;
     line-height: 0.6em;
     width: 99%;
-    padding: 0.3em;
+    padding: 0.2em;
 }
 .mainFooter {
     text-align: left;
@@ -56,7 +56,7 @@
   clear: both;
   float: left;
   display: block;
-  height: 2em;
+  height: 3em;
   visibility: hidden;
 }
 
@@ -295,6 +295,10 @@
 @media screen and (min-width: 0px) and (max-width: 567px) {
   .detailResultsArea { display: none; }  
   .summaryResultsArea { width: 100%; }
+  .mainFooterArea {display: none;}
+}
+@media screen and (min-height: 0px) and (max-width: 480px) {
+  .mainFooterArea {display: none;}
 }
 
 /* Detail Results for constituency */
