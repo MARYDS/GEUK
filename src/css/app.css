@@ -2,23 +2,30 @@
 * {
   font-family: tahoma, helvetica, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  border: 0;
   width: 100%;
 }
 
 /* properties for entire page */
 .mainResultsPage {
   width: 99%;
+  margin: auto;
 }
 /* Heading for year title */
 .mainTitleArea {
     display: block;
     top: 0;
     position: fixed;
-    background-color: lightgrey;
-    border: 1px solid darkgrey;
+    background-color: #005251;
+    width: 99%;
+    margin: auto;
 }
 .mainTitle {
     text-align: center;
+    color: white;
+    font-size: 80%;
+    margin: 0.5em 0
 }
 .mainTitleBlock {
   display: block;
@@ -29,22 +36,27 @@
 .mainFooterArea {
     clear: both;
     display: block;
-    background-color: lightgrey;
-    border: 1px solid darkgrey;
-    padding: 0.1em;
+    background-color: #005251;
     position: fixed;  
     bottom: 0;
+    line-height: 0.6em;
+    width: 99%;
+    padding: 0.3em;
 }
 .mainFooter {
     text-align: left;
     font-size: 0.5em;
     padding: 0;
+    color: white;
+}
+.mainFooter a {
+  color: white;
 }
 .mainFooterBlock {
   clear: both;
   float: left;
   display: block;
-  height: 3em;
+  height: 2em;
   visibility: hidden;
 }
 
@@ -82,8 +94,9 @@
 }
 .resultsSummaryRegionField {
     float: left;
-    width: 33%;
+    width: 32%;
     font-size: 0.6em;
+    margin: 0.1em
 }
 .resultsSummaryRegionFieldInputBox {
   width: 15%;
@@ -92,12 +105,12 @@
     float: left;
 }
 .resultsSummaryRegionButton {
-   border: 1px solid darkgrey;
+   border: 1px solid #005251;
    outline: none;
    padding: 0.5em;
    float: left;
    width: 20%;
-   background-color: lightgrey;
+   background-color: #8bafad;
    font-size: 0.6em;
 }
 
@@ -110,8 +123,9 @@
 }
 .resultsSummaryPartyField {
     float: left;
-    width: 33%;
+    width: 32%;
     font-size: 0.6em;
+    margin: 0.1em;
 }
 .resultsSummaryPartyFieldInputBox {
   width: 15%;
@@ -120,12 +134,12 @@
     float: left;
 }
 .resultsSummaryPartyButton {
-   border: 1px solid darkgrey;
+   border: 1px solid #005251;
    outline: none;
    padding: 0.5em;
    float: left;
    width: 20%;
-   background-color: lightgrey;
+   background-color: #8bafad;
    font-size: 0.6em;
 }
 
@@ -137,12 +151,12 @@
     font-size: 0.6em;
 }
 .resultsSummarySortButton {
-   border: 1px solid darkgrey;
+   border: 1px solid #005251;
    outline: none;
    padding: 0.5em;
    float: left;
    width: 33%;
-   background-color: lightgrey;
+   background-color: #8bafad;
    cursor: move;
    font-size: 0.6em;
 }
@@ -173,11 +187,11 @@
    margin-top: 1%;
 }
 .resultsSummarySelectButton {
-   border: 1px solid darkgrey;
+   border: 1px solid #005251;
    outline: none;
    padding: 0.4em;
    float: left;
-   background-color: lightgrey;
+   background-color:#8bafad;
    cursor: pointer;
    font-size: 0.6em;
    width: 25%;
@@ -185,7 +199,7 @@
 }
 
 .resultsSummarySelectButton:hover {
-  background-color: darkgrey;
+  background-color: #3c7f7d;
   color: white;
 }
 
@@ -203,7 +217,7 @@
   table-layout: fixed;
 }
 .resultsSummaryTable th {
-  background-color: dimgrey;
+  background-color: #005251;
   color: white;
   border: none;
   font-weight: normal;
@@ -339,7 +353,7 @@
   table-layout: fixed;
 }
 .resultsDetailTable th {
-  background-color: dimgrey;
+  background-color: #005251;
   color: white;
   border: none;
   font-weight: Normal;
@@ -407,7 +421,7 @@
    border-collapse: collapse;
 }
 .euResultsDetailTable th {
-   background-color: dimgrey;
+   background-color: #005251;
    color: white;
    border: none;
    font-weight: Normal;
