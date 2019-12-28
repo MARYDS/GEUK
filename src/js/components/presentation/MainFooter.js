@@ -10,6 +10,9 @@ const MainFooter = () => {
     return (
         <footer>
             <div className="mainFooterArea">
+            <span className="mainFooter">2019 Election results from&nbsp;
+<a href="https://commonslibrary.parliament.uk/parliament-and-elections/elections-elections/constituency-data-election-results/">House of Commons library briefing</a> and news media reports,&nbsp;
+        </span>
                 <span className="mainFooter">2017 Election results mainly from&nbsp;
 <a href="http://researchbriefings.parliament.uk/ResearchBriefing/Summary/CBP-7979">House of Commons library briefing</a> and news media reports,&nbsp;
         </span>
